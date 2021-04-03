@@ -1,0 +1,15 @@
+body{
+	position: relative;
+}
+	  .type{
+          font-size: large;
+		  position: absolute;
+		  color: rgb(48, 47, 46);
+		  display: inline-block;
+		  z-index: 1;
+
+	  }
+
+
+
+    
