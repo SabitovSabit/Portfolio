@@ -1,36 +1,102 @@
 
  
 
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, font, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        box-sizing: border-box;
-    }
+    
 
+
+    /*
+   <img src="assets/img/1.png" data-speed="-5" class="layer">
+      <img src="assets/img/2.png" data-speed="5" class="layer">
+      <img src="assets/img/3.png" data-speed="2" class="layer">
+      <img src="assets/img/4.png" data-speed="6" class="layer">
+      <img src="assets/img/5.png" data-speed="8" class="layer">
+      <img src="assets/img/6.png" data-speed="4" class="layer">
+      <img src="assets/img/7.png" data-speed="-4" class="layer">
+      <img src="assets/img/8.png" data-speed="-7" class="layer">
+      <img src="assets/img/9.png" data-speed="9" class="layer">
+      <img src="assets/img/10.png" data-speed="-2" class="layer">
+      <img src="assets/img/11.png" data-speed="-3" class="layer">
+      <img src="assets/img/12.png" data-speed="-8" class="layer">
+    
+    */
+
+
+
+
+
+  
     body {
-        overflow: hidden;
+        font-family: sans-serif;
+        text-align: center;
     }
 
+    .light {
+        background: #666;
+        color: #fff;
+    }
 
-    .section3{
+    
+    .skills{
         position: relative;
     }
-    .holder{
+    .content  {
+        display: inline-block;
+        margin: 20px;
         position: absolute;
-        top: 50px;
-        left: 50px;
+        left: 60%;
+        top: 20%;
     }
+    .tagcloud{
+      
+        display: inline-block;
+        margin: 20px;
+    }
+
+    ul {
+        display: inline-block;
+    }
+
+    a {
+        color: #0366d6;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+
+    .tagcloud {
+        color: white;
+        font-size: 16px;
+    }
+
+    .tagcloud--item {
+        padding: 2px 4px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .tagcloud--item:hover {
+        background-color: rgba(172, 165, 165, 0.1);
+        border: 1px solid rgb(245, 242, 242);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        opacity: 1 !important;
+        z-index: 100 !important;
+    }
+
+    .light .tagcloud--item {
+        color: #fff;
+    }
+
+    .light .tagcloud--item:hover {
+        background-color: rgba(255, 255, 255, .1);
+        border: 1px solid #fff;
+    }
+
+
 

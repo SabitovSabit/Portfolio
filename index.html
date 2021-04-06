@@ -2,136 +2,491 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full page scroll</title>
-  <link rel="stylesheet" type="text/css" href="assets/stylesheet/full-page-scroll.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="assets/stylesheet/slider.css">
-  <link rel="stylesheet" href="assets/stylesheet/type.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="assets/stylesheet/workslider.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/stylesheet/tagcloud.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full page scroll</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+        <link rel="icon" type="image/png" href="/ContactFrom_v12/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/css/util.css">
+        <link rel="stylesheet" type="text/css" href="/ContactFrom_v12/css/main.css">
+
+    <link rel="stylesheet" href="assets/stylesheet/full-page-scroll.css" />
+    <link rel="stylesheet" href="assets/stylesheet/type.css">
+    <link rel="stylesheet" href="assets/stylesheet/workslider.css">
+    <link rel="stylesheet" href="assets/stylesheet/tagcloud.css">
+    <link rel="stylesheet" href="assets/stylesheet/parallax.css">
+    <link rel="stylesheet" href="assets/stylesheet/mainstyle.css">
 </head>
 
 <body>
 
-  <div id="main" class="scroll-container">
-    <section class="home">
-      <div>
-        <p id="demo"></p>
-        <p id="demo2"></p>
 
-      </div>
-    </section>
-    <section class="section2">
-      <div>
-        <span>Working on Tablets and Phones</span>
-      </div>
-    </section>
-    <section class="section3">
-      <div id='holder'></div>
-    </section>
-    <section class="works">
-      <div id="drag-container" style="transform: rotateX(-10deg) rotateY(0deg);">
-        <div id="spin-container"
-          style="width: 120px; height: 170px; animation: 60s linear 0s infinite normal none running spinRevert;">
-          <!-- Add your images (or video) here -->
-          <img src="https://source.unsplash.com/Byar7HFv7o4/500x900" alt=""
-            style="transform: rotateY(0deg) translateZ(240px); transition: transform 1s ease 2s;">
-          <img src="https://source.unsplash.com/zwSMv0jY-1o/500x900" alt=""
-            style="transform: rotateY(45deg) translateZ(240px); transition: transform 1s ease 1.75s;">
-          <img src="https://source.unsplash.com/0YC0o6VbMXk/500x900" alt=""
-            style="transform: rotateY(90deg) translateZ(240px); transition: transform 1s ease 1.5s;">
-          <img src="https://source.unsplash.com/UCEtRnp8qR0/500x900" alt=""
-            style="transform: rotateY(135deg) translateZ(240px); transition: transform 1s ease 1.25s;">
-          <img src="https://source.unsplash.com/dE6c9RZoyL8/500x900" alt=""
-            style="transform: rotateY(180deg) translateZ(240px); transition: transform 1s ease 1s;">
-          <img src="https://source.unsplash.com/URn7-JupQ6Q/500x900" alt=""
-            style="transform: rotateY(225deg) translateZ(240px); transition: transform 1s ease 0.75s;">
 
-          <!-- Example image with link -->
-          <a target="_blank" href="https://source.unsplash.com/16_HALXkSpo/500x900">
-            <img src="https://source.unsplash.com/16_HALXkSpo/500x9000" alt=""
-              style="transform: rotateY(270deg) translateZ(240px); transition: transform 1s ease 0.5s;">
-          </a>
-
-          <!-- Example add video  -->
-          <video controls="" autoplay="autoplay" loop=""
-            style="transform: rotateY(315deg) translateZ(240px); transition: transform 1s ease 0.25s;">
-            <source
-              src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&amp;profile_id=165&amp;oauth2_token_id=57447761"
-              type="video/mp4">
-          </video>
-
-          <!-- Text at center of ground -->
-          <p>3D Tiktok Carousel</p>
+    <div class="container-fluid  ">
+        <div class="circle-container">
+            <div class="circle"></div>
         </div>
-        <div id="ground" style="width: 720px; height: 720px;"></div>
-      </div>
-    </section>
-    <section class="section5">
-      
-    </section>
-  </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
 
-  <script src="assets/javascript/jquery.svg3dtagcloud.min.js"></script>
-  <script src="assets/javascript/workslider.js"></script>
-  <script src="assets/javascript/tagcloud.js"></script>
-  <script src="assets/javascript/full-page-scroll.js"></script>
-  <script src="assets/javascript/slider.js"></script>
-  <script src="assets/javascript/type.js"></script>
+        <div id="main" class="scroll-container">
+
+            <section class="home" id="home">
+                <div class="nameHome">
+                    <h1 class="layer" data-speed="8">Home</h1>
+                </div>
+                <div class="type">
+                    <p id="demo"></p>
+                    <p id="demo2" data-speed="5" class="layer"></p>
+
+                </div>
+            </section>
+            <section class="about" id="about">
 
 
-  <script type="text/javascript">
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-      (function () {
-        function refreshCSS() {
-          var sheets = [].slice.call(document.getElementsByTagName("link"));
-          var head = document.getElementsByTagName("head")[0];
-          for (var i = 0; i < sheets.length; ++i) {
-            var elem = sheets[i];
-            var parent = elem.parentElement || head;
-            parent.removeChild(elem);
-            var rel = elem.rel;
-            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-            }
-            parent.appendChild(elem);
-          }
-        }
-        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-        var address = protocol + window.location.host + window.location.pathname + '/ws';
-        var socket = new WebSocket(address);
-        socket.onmessage = function (msg) {
-          if (msg.data == 'reload') window.location.reload();
-          else if (msg.data == 'refreshcss') refreshCSS();
-        };
-        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-          console.log('Live reload enabled.');
-          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-        }
-      })();
-    } else {
-      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-    // ]]>
-  </script>
+                <div class="article">
+                    <h1 class="glowIn">
+                        The World this Week
+                    </h1>
+                    <p class="glowIn">
+                        A winter storm that covered three-quarters of America’s Lower 48 with snow brought havoc to
+                        southern states.
+                        A federal emergency was declared in Texas; temperatures plummeted to -2℉ (-19℃) in Dallas.
+                        Millions of
+                        Texans were left without power, as were tens of thousands of people in other states. Many blamed
+                        antiquated
+                        energy grids for not being able to cope with the surge in demand for electricity.
+                    </p>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="content">
+                    <!-- content -->
+                </div>
+                
+            </section>
+            <section class="works" id="works">
+                <div class="workslide" id="drag-container" style="transform: rotateX(-10deg) rotateY(0deg);">
+                    <div id="spin-container"
+                        style="width: 120px; height: 170px; animation: 60s linear 0s infinite normal none running spinRevert;">
+                        <!-- Add your images (or video) here -->
+                        <img src="https://source.unsplash.com/Byar7HFv7o4/500x900" alt=""
+                            style="transform: rotateY(0deg) translateZ(240px); transition: transform 1s ease 2s;">
+                        <img src="https://source.unsplash.com/zwSMv0jY-1o/500x900" alt=""
+                            style="transform: rotateY(45deg) translateZ(240px); transition: transform 1s ease 1.75s;">
+                        <img src="https://source.unsplash.com/0YC0o6VbMXk/500x900" alt=""
+                            style="transform: rotateY(90deg) translateZ(240px); transition: transform 1s ease 1.5s;">
+                        <img src="https://source.unsplash.com/UCEtRnp8qR0/500x900" alt=""
+                            style="transform: rotateY(135deg) translateZ(240px); transition: transform 1s ease 1.25s;">
+                        <img src="https://source.unsplash.com/dE6c9RZoyL8/500x900" alt=""
+                            style="transform: rotateY(180deg) translateZ(240px); transition: transform 1s ease 1s;">
+                        <img src="https://source.unsplash.com/URn7-JupQ6Q/500x900" alt=""
+                            style="transform: rotateY(225deg) translateZ(240px); transition: transform 1s ease 0.75s;">
+
+                        <!-- Example image with link -->
+                        <a target="_blank" href="https://source.unsplash.com/16_HALXkSpo/500x900">
+                            <img src="https://source.unsplash.com/16_HALXkSpo/500x9000" alt=""
+                                style="transform: rotateY(270deg) translateZ(240px); transition: transform 1s ease 0.5s;">
+                        </a>
+
+
+                        <!-- Text at center of ground -->
+                        <p>3D Tiktok Carousel</p>
+                    </div>
+                    <div id="ground" style="width: 720px; height: 720px;"></div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+
+              
+	<div class="contact1">
+		<div class="container-contact1">
+			
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Get in touch
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="Subject">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+					<textarea class="input1" name="message" placeholder="Message"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Send Email
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+           
+            </section>
+           
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
+
+
+    <script src="assets/javascript/jquery.svg3dtagcloud.min.js"></script>
+    <script src="assets/javascript/workslider.js"></script>
+    <script src="assets/javascript/tagcloud.js"></script>
+    <script src="assets/javascript/full-page-scroll.js"></script>
+    <script src="assets/javascript/slider.js"></script>
+    <script src="assets/javascript/type.js"></script>
+    <script src="/assets/javascript/parallax.js"></script>
+
+
+
 </body>
 
 </html>

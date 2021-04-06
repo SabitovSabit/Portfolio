@@ -73,25 +73,30 @@
 	 * Build dots navigation
 	 * @return {Object} this (fullScroll)
 	 */
+	let anames=['Home','About','Skills','Works','Contact'];
+
 	fullScroll.prototype.buildDots = function () {		
 		this.ul = document.createElement('ul');
 		
 		this.ul.className = this.updateClass(1, 'dots', this.ul.className);
 		this.ul.className = this.updateClass(1, this.defaults.dotsPosition == 'right' ? 'dots-right' : 'dots-left', this.ul.className);
-
+          
 		var _self = this;
 		var sections = this.defaults.sections;		
-
 		for (var i = 0; i < sections.length; i++) {
 			var li = document.createElement('li');
 			var a = document.createElement('a');
-		
+		    a.innerHTML=anames[i];
+			a.className='menuname';
 			a.setAttribute('href', '#' + i);			
 			li.appendChild(a);
 			_self.ul.appendChild(li);
-		}
+			
+ 		}
+        
 
-		this.ul.childNodes[0].firstChild.className = this.updateClass(1, 'active', this.ul.childNodes[0].firstChild.className);
+		this.ul.childNodes[0].firstChild.style.color='white';
+
 
 		if (this.defaults.displayDots) {
 			document.body.appendChild(this.ul);
@@ -218,9 +223,12 @@
 			this.defaults.container.style.transition = 'all ' + animateTime + 's ' + animateFunction;
 
 			for (var i = 0; i < this.ul.childNodes.length; i++) {
-					this.ul.childNodes[i].firstChild.className = this.updateClass(2, 'active', this.ul.childNodes[i].firstChild.className);
 					if (i == this.defaults.currentPosition) {
-					this.ul.childNodes[i].firstChild.className = this.updateClass(1, 'active', this.ul.childNodes[i].firstChild.className);
+					this.ul.childNodes[i].firstChild.style.color='white';
+				
+				}
+				else{
+					this.ul.childNodes[i].firstChild.style.color='red';
 				}
 			}
 		};
